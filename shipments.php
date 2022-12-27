@@ -1,3 +1,5 @@
+<?php
+
 function save_6_shipment($master_order_id) {
 	require("../config/update_db.php");
 	print_r("<br>".$master_order_id."<br>");
@@ -141,3 +143,5 @@ function save_6_shipment($master_order_id) {
 	save_7_substatus_history($result, $master_order_id);
 	save_8_shipping_items($result, $master_order_id);
 }
+
+?>
